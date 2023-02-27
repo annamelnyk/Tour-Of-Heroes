@@ -1,0 +1,8 @@
+<div *ngIf="!showDashboard">
+  <h2 class="subheader">My Heroes</h2>
+  <ul>
+    <app-hero *ngFor="let myHero of heroes" [hero]="myHero"> </app-hero>
+  </ul>
+  <app-button name="Sort By Name" buttonTheme="blue" (clickHandler)="sortByName()"></app-button>  
+  <app-button name="Sort By Id" buttonTheme="blue" (clickHandler)="sortByID()"></app-button>  
+</div>

@@ -1,0 +1,19 @@
+button {
+  font-size: 18px;
+  padding: 15px 20px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin: 0 15px;
+}
+
+.grey {
+  background-color: grey;
+  color: rgb(36, 107, 148);
+}
+
+.blue {
+  background-color: rgb(36, 107, 148);
+  color: grey;
+}

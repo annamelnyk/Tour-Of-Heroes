@@ -1,0 +1,7 @@
+<h1>{{this.hero.toUpperCase() || heroDetails?.name?.toUpperCase()}} Details</h1>
+<p>ID: {{heroDetails?.id}}</p>
+<form (ngSubmit)="onSubmit()">
+  <label for="hero">Hero name: </label>
+  <input type="text" name="hero" id="hero" [(ngModel)]="hero" value="{{hero}}" placeholder="{{heroDetails?.name}}">
+</form>
+<app-button name="Back" buttonTheme="grey" (clickHandler)="goBack()"></app-button>

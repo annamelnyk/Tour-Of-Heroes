@@ -1,0 +1,10 @@
+<div *ngIf="showDashboard">
+  <h2 class="subheader">Top Heroes</h2>
+  <app-button
+    *ngFor="let topHero of showOnlyTopHeroes()"
+    routerLink="/detail/{{ topHero.id }}"
+    [name]="topHero.name"
+    buttonTheme="blue"
+  >
+  </app-button>
+</div>
